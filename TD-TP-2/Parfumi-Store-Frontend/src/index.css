@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  color: #111827;
+  background: #f7f9fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --ink: #111827;
+  --muted: #778397;
+  --line: #e6ebf2;
+  --white: #ffffff;
+  --blue: #367bd6;
+  --blue-dark: #205ca8;
+  --blue-soft: #edf5ff;
+  --blue-pale: #f5f9ff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  padding-top: 76px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--ink);
+  background: #f7f9fc;
+}
+button, input { font: inherit; }
+button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+::selection { color: #fff; background: var(--blue-dark); }
