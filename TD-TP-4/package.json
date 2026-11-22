@@ -1,0 +1,10 @@
+{
+  "name": "parfumi-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Parfumi Store - Express/MongoDB backend + React Native (Expo) mobile app",
+  "scripts": {
+    "start": "node start.js",
+    "seed": "node start.js --seed"
+  }
+}
