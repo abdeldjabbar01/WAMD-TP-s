@@ -1,8 +1,8 @@
 <div align="center">
-<img src="assets/banner.png" alt="PARFUMI – WAMD practical work" width="100%" />
+<img src="assets/header.png" alt="WAMD TD/TP – Web & Mobile Development" width="100%" />
 # WAMD · TD/TP Assignments
  
-**Web And Mobile Development — practical work, from first page to full-stack mobile app.**
+**Web And Mobile Development — 4 practical works: portfolio → front end → full-stack web → mobile app.**
  
 ![Module](https://img.shields.io/badge/Module-WAMD-000000?style=for-the-badge)
 ![School](https://img.shields.io/badge/ENSTA-TD%2FTP-0a84ff?style=for-the-badge)
@@ -17,44 +17,46 @@
 ![Redux](https://img.shields.io/badge/Redux%20Toolkit-000000?style=flat-square&logo=redux&logoColor=764ABC)
 ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
  
-[About](#-about) · [Structure](#-repository-structure) · [Featured project](#-featured-project--parfumi) · [Getting started](#-getting-started) · [API](#-api-reference) · [Author](#-author)
+[About](#-about) · [Structure](#-repository-structure) · [Parfumi](#-featured-project--parfumi-tp-4--mobile) · [Database](#-database-structure) · [Getting started](#-getting-started) · [API](#-api-reference) · [Author](#-author)
  
 </div>
 ---
  
 ## ✦ About
  
-This repository gathers the **TD/TP assignments** of the *Web And Mobile Development* module.
-Each folder is one self-contained practical work, built step by step — the later ones reuse and extend
-what was learned in the earlier ones.
+This repository gathers the **4 TD/TP assignments** of the *Web And Mobile Development* module.
+It follows one learning path: a personal **portfolio**, then the **front end** of an online perfume store,
+then the same store as a **full-stack web app**, and finally the **mobile app** on top of the same backend.
  
 ## ✦ Repository structure
  
 ```text
 WAMD-TP-s/
-├── TD-TP-1/             # Practical work 1
-├── TD-TP-2/             # Practical work 2
-├── TD_TP_3/             # Practical work 3
-├── 04-parfumi-mobile/   # Full-stack store: Express API + React Native app
+├── TD-TP-1/             # TP 1 · Portfolio
+├── TD-TP-2/             # TP 2 · Front-end web (Parfumi store)
+├── TD_TP_3/             # TP 3 · Full-stack web (Parfumi + API + database)
+├── 04-parfumi-mobile/   # TP 4 · Mobile app (React Native) + backend
 ├── assets/              # Images used by this README
 ├── .gitignore
 └── README.md
 ```
  
-| Folder | Topic | Stack |
-| :-- | :-- | :-- |
-| [`TD-TP-1`](./TD-TP-1) | _Add a one-line summary_ | _…_ |
-| [`TD-TP-2`](./TD-TP-2) | _Add a one-line summary_ | _…_ |
-| [`TD_TP_3`](./TD_TP_3) | _Add a one-line summary_ | _…_ |
-| [`04-parfumi-mobile`](./04-parfumi-mobile) | **Parfumi** — mobile store with customer & admin roles | React Native · Express · MongoDB |
+| TP | Folder | Project | What it is | Stack |
+| :-: | :-- | :-- | :-- | :-- |
+| **1** | [`TD-TP-1`](./TD-TP-1) |  **Portfolio** | Personal portfolio website | Web front end |
+| **2** | [`TD-TP-2`](./TD-TP-2) |  **Front-end web** | The Parfumi store interface: products, search, cart | Web front end |
+| **3** | [`TD_TP_3`](./TD_TP_3) |  **Full-stack web** | The store connected to a real API, database and authentication | Express · MongoDB · JWT |
+| **4** | [`04-parfumi-mobile`](./04-parfumi-mobile) |  **Mobile app** | Parfumi as a native app with customer and admin roles | React Native · Expo · Express · MongoDB |
  
-> 💡 Fill the three `Add a one-line summary` cells with what each TP is about.
+> The TP 4 folder keeps its original name. Rename it to `TD-TP-4` if you want the repo to be consistent,
+> and update the paths in this file.
  
 ---
  
-## ✦ Featured project · PARFUMI
+## ✦ Featured project · PARFUMI (TP 4 — Mobile)
  
-> A fragrance store that feels like a real app: Apple-style design, a floating animated tab bar,
+<img src="assets/banner.png" alt="Parfumi" width="100%" />
+> The mobile version of the store built in TP 2 and TP 3 — it reuses the same Express + MongoDB backend and feels like a real app: Apple-style design, a floating animated tab bar,
 > a three-phase cart, and an admin side to manage products, orders and customers.
  
 <div align="center">
@@ -89,15 +91,7 @@ WAMD-TP-s/
  
 ### How an order moves
  
-```mermaid
-stateDiagram-v2
-    direction LR
-    [*] --> OnCart: add perfumes
-    OnCart --> Ordered: customer checks out
-    Ordered --> Confirmed: admin presses "Ship order"
-    Confirmed --> [*]: shipping
-```
- 
+<img src="assets/order-flow.png" alt="Order flow" width="100%" />
 | Phase | Customer sees | Who triggers it |
 | :-- | :-- | :-- |
 | **On cart** | Items, quantities, total | Customer |
@@ -106,45 +100,27 @@ stateDiagram-v2
  
 ### Architecture
  
-```mermaid
-flowchart LR
-    subgraph Phone["📱 React Native (Expo)"]
-        UI[Screens & animated tab bar]
-        Redux[(Redux cart)]
-        Auth[AuthContext · JWT]
-        UI --- Redux
-        UI --- Auth
-    end
-    subgraph Server["🖥 Node.js + Express"]
-        Routes["/api/auth · /products · /orders · /users"]
-        MW[JWT + admin middleware]
-        Routes --- MW
-    end
-    DB[(MongoDB<br/>Users · Products · Orders)]
-    UI -- "Axios · Bearer token" --> Routes
-    Routes -- Mongoose --> DB
-```
- 
+<img src="assets/architecture.png" alt="Architecture" width="100%" />
 ### Tech stack
  
-| Layer | Tools |
-| :-- | :-- |
-| **Mobile** | React Native 0.88 · Expo · React Navigation (tabs + stack) · Redux Toolkit · Axios · AsyncStorage · `Animated` API · Ionicons |
-| **Backend** | Node.js · Express 5 · Mongoose · JSON Web Tokens · bcrypt · express-rate-limit · CORS |
-| **Database** | MongoDB |
-| **Design** | Apple-style typography (San Francisco on iOS), black & white with a single blue accent |
- 
+<img src="assets/stack.png" alt="Tech stack" width="100%" />
 ### Design system
  
-| Token | Value | Used for |
+<img src="assets/design.png" alt="Design system" width="100%" />
+---
+ 
+## ✦ Database structure
+ 
+<img src="assets/database.png" alt="Database structure" width="100%" />
+| Collection | Purpose | Key fields |
 | :-- | :-- | :-- |
-| ⬛ Ink | `#000000` | Text, logo, tab bar, primary buttons |
-| ⬜ White | `#FFFFFF` | Backgrounds |
-| 🩶 Group | `#F5F5F7` | Cards, search bar, inputs |
-| 🟦 Blue | `#0A84FF` | Accent: badges, *Ship order*, active states |
+| **users** | Customers and admins | `name`, `email` (unique), `passwordHash`, `role` |
+| **products** | The perfume catalogue | `name`, `price`, `category`, `imageUrl`, `stock` |
+| **orders** | Placed orders | `user` → users, embedded `items[]`, `total`, `status`, `address`, `phone` |
  
-Typography follows Apple's scale: large titles at 34 pt, headlines at 17 pt semibold, tight letter spacing.
- 
+- One **user** places many **orders**.
+- Each order **embeds** its items; every item points to a **product** and keeps a snapshot of its name, price and image.
+- `status` is `ordered` until an admin presses *Ship order*, then `confirmed`.
 ---
  
 ## ✦ Getting started
@@ -191,7 +167,7 @@ Registration always creates a **customer**. To make someone an admin, register n
  
 ## ✦ API reference
  
-Base URL: `http://<host>:5000/api` — 🔒 means a Bearer token is required, 👑 means admin only.
+Base URL: `http://<host>:5000/api` —  means a Bearer token is required,  means admin only.
  
 | Method | Endpoint | Access | Description |
 | :-- | :-- | :-: | :-- |
@@ -199,12 +175,12 @@ Base URL: `http://<host>:5000/api` — 🔒 means a Bearer token is required, �
 | `POST` | `/auth/login` | | Sign in, returns token and user |
 | `GET` | `/products` | | List perfumes |
 | `GET` | `/products/:id` | | One perfume |
-| `POST` `PUT` `DELETE` | `/products` · `/products/:id` | 🔒 👑 | Add, edit, delete a perfume |
-| `POST` | `/orders` | 🔒 | Place an order (prices and stock checked server-side) |
-| `GET` | `/orders/mine` | 🔒 | My orders |
-| `GET` | `/orders` | 🔒 👑 | All orders with customer info |
-| `PATCH` | `/orders/:id/ship` | 🔒 👑 | Confirm and ship an order |
-| `GET` | `/users` | 🔒 👑 | Customers: id, email, picture, orders count |
+| `POST` `PUT` `DELETE` | `/products` · `/products/:id` |  | Add, edit, delete a perfume |
+| `POST` | `/orders` |  | Place an order (prices and stock checked server-side) |
+| `GET` | `/orders/mine` |  | My orders |
+| `GET` | `/orders` |  | All orders with customer info |
+| `PATCH` | `/orders/:id/ship` |  | Confirm and ship an order |
+| `GET` | `/users` |  | Customers: id, email, picture, orders count |
  
 ## ✦ Project layout
  
