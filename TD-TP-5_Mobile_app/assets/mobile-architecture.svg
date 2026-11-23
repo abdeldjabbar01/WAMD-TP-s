@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" font-family="Helvetica, Arial, sans-serif">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#3a7bd5"/></marker></defs>
+  <rect width="1200" height="420" fill="#f6f7f9"/>
+  <g stroke="#1d2330" stroke-width="2" fill="#fff">
+    <rect x="40" y="50" width="300" height="130" rx="16"/>
+    <rect x="40" y="230" width="300" height="130" rx="16"/>
+    <rect x="450" y="120" width="300" height="180" rx="16"/>
+    <rect x="860" y="120" width="300" height="180" rx="16"/>
+  </g>
+  <g fill="#1d2330" text-anchor="middle">
+    <text x="190" y="88" font-size="22" font-weight="700">Mobile App</text>
+    <text x="190" y="118" font-size="16" fill="#5b6575">React Native + Expo</text>
+    <text x="190" y="146" font-size="16" fill="#5b6575">Customer + Admin screens</text>
+    <text x="190" y="268" font-size="22" font-weight="700">Web App (TP 03)</text>
+    <text x="190" y="298" font-size="16" fill="#5b6575">Browser client</text>
+    <text x="190" y="326" font-size="16" fill="#5b6575">Same store data</text>
+    <text x="600" y="168" font-size="22" font-weight="700">Express API</text>
+    <text x="600" y="198" font-size="16" fill="#5b6575">Routes · Controllers</text>
+    <text x="600" y="226" font-size="16" fill="#5b6575">Auth · Orders · Products</text>
+    <text x="600" y="254" font-size="16" fill="#5b6575">Users</text>
+    <text x="1010" y="168" font-size="22" font-weight="700">MongoDB</text>
+    <text x="1010" y="198" font-size="16" fill="#5b6575">users</text>
+    <text x="1010" y="226" font-size="16" fill="#5b6575">products</text>
+    <text x="1010" y="254" font-size="16" fill="#5b6575">orders</text>
+    <text x="395" y="150" font-size="14" fill="#3a7bd5">HTTP / JSON</text>
+    <text x="805" y="196" font-size="14" fill="#3a7bd5">Mongoose</text>
+  </g>
+  <g stroke="#3a7bd5" stroke-width="3" fill="none" marker-end="url(#a)">
+    <path d="M340 115 L440 190"/><path d="M340 295 L440 230"/><path d="M750 210 L850 210"/>
+  </g>
+</svg>

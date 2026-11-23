@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="460" fill="#f6f7f9"/>
+  <g stroke="#1d2330" stroke-width="2" fill="#fff">
+    <rect x="40" y="40" width="320" height="260" rx="14"/>
+    <rect x="440" y="40" width="320" height="300" rx="14"/>
+    <rect x="840" y="40" width="320" height="300" rx="14"/>
+  </g>
+  <rect x="40" y="40" width="320" height="48" rx="14" fill="#1d2330"/>
+  <rect x="440" y="40" width="320" height="48" rx="14" fill="#1d2330"/>
+  <rect x="840" y="40" width="320" height="48" rx="14" fill="#1d2330"/>
+  <g fill="#fff" font-size="20" font-weight="700"><text x="64" y="72">User</text><text x="464" y="72">Product</text><text x="864" y="72">Order</text></g>
+  <g fill="#1d2330" font-size="17">
+    <text x="64" y="125">_id : ObjectId</text><text x="64" y="160">fullName : String</text><text x="64" y="195">email : String (unique)</text><text x="64" y="230">password : String (hashed)</text><text x="64" y="265">role : customer | admin</text>
+    <text x="464" y="125">_id : ObjectId</text><text x="464" y="160">name : String</text><text x="464" y="195">category : Women | Men</text><text x="464" y="230">price : Number (DA)</text><text x="464" y="265">image : String</text><text x="464" y="300">available : Boolean</text>
+    <text x="864" y="125">_id : ObjectId</text><text x="864" y="160">user : ref User</text><text x="864" y="195">items : [product, quantity]</text><text x="864" y="230">total : Number (DA)</text><text x="864" y="265">status : ordered | shipped</text><text x="864" y="300">createdAt : Date</text>
+  </g>
+  <g stroke="#3a7bd5" stroke-width="3" fill="none">
+    <path d="M360 170 H400 V400 H1000 V340"/>
+    <path d="M760 190 H840" stroke-dasharray="6 6"/>
+  </g>
+  <text x="600" y="435" text-anchor="middle" font-size="15" fill="#3a7bd5">Order.user references User · Order.items reference Product</text>
+</svg>
