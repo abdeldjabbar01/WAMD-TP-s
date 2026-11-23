@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="460" viewBox="0 0 1280 460" role="img" aria-label="Parfumi Mobile banner">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071225"/><stop offset=".6" stop-color="#0b1c37"/><stop offset="1" stop-color="#111b42"/></linearGradient>
+        <radialGradient id="glow"><stop stop-color="#9b8cff" stop-opacity=".26"/><stop offset="1" stop-color="#9b8cff" stop-opacity="0"/></radialGradient>
+        <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#2c4b73" stroke-opacity=".18" stroke-width="1"/></pattern>
+      </defs>
+      <rect width="1280" height="460" rx="26" fill="url(#bg)"/>
+      <rect width="1280" height="460" rx="26" fill="url(#grid)"/>
+      <ellipse cx="1000" cy="220" rx="360" ry="270" fill="url(#glow)"/>
+      <path d="M0 390 C220 330 350 475 580 405 S980 360 1280 410" fill="none" stroke="#9b8cff" stroke-opacity=".16" stroke-width="2"/>
+      <rect x="72" y="70" width="88" height="34" rx="17" fill="#9b8cff" fill-opacity=".16" stroke="#9b8cff" stroke-opacity=".65"/>
+      <text x="116" y="93" fill="#9b8cff" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle">TP 04</text>
+      <text x="72" y="178" fill="#f4f8ff" font-family="Inter,Arial,sans-serif" font-size="50" font-weight="750">Parfumi Mobile</text>
+      <text x="74" y="222" fill="#9eb4d3" font-family="Inter,Arial,sans-serif" font-size="22">The store experience extended to mobile.</text>
+      <rect x="74" y="270" width="70" height="5" rx="2.5" fill="#9b8cff"/>
+      <circle cx="1200" cy="58" r="4" fill="#9b8cff" opacity=".8"/><circle cx="1170" cy="84" r="2.5" fill="#55e0d0" opacity=".7"/>
+      
+          <rect x="884" y="60" width="186" height="330" rx="30" fill="#0b1730" stroke="#9b8cff" stroke-width="5"/>
+          <rect x="898" y="84" width="158" height="278" rx="19" fill="#11284a"/>
+          <rect x="946" y="72" width="62" height="8" rx="4" fill="#45678f"/>
+          <rect x="918" y="110" width="118" height="84" rx="12" fill="#1a4773"/>
+          <circle cx="977" cy="152" r="20" fill="#9b8cff" opacity=".85"/>
+          <rect x="918" y="211" width="118" height="12" rx="6" fill="#527ba8"/>
+          <rect x="918" y="237" width="90" height="9" rx="4.5" fill="#345b86"/>
+          <rect x="918" y="267" width="118" height="38" rx="11" fill="#9b8cff"/>
+          <circle cx="977" cy="337" r="8" fill="#45678f"/>
+          <circle cx="818" cy="166" r="24" fill="#17385f" stroke="#55e0d0" stroke-width="2"/>
+          <path d="M808 166 h20 M818 156 v20" stroke="#55e0d0" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="1138" cy="285" r="33" fill="#17385f" stroke="#9b8cff" stroke-width="2"/>
+          <path d="M1125 285 h26 M1138 272 v26" stroke="#9b8cff" stroke-width="4" stroke-linecap="round"/>
+        
+    </svg>

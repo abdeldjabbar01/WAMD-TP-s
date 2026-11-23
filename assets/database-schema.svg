@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="960" viewBox="0 0 1600 960" role="img" aria-label="Parfumi database schema">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071225"/><stop offset="1" stop-color="#101d3a"/></linearGradient>
+ <linearGradient id="u" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#15395f"/><stop offset="1" stop-color="#10213e"/></linearGradient>
+ <linearGradient id="p" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#16434e"/><stop offset="1" stop-color="#10213e"/></linearGradient>
+ <linearGradient id="o" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#312c62"/><stop offset="1" stop-color="#10213e"/></linearGradient>
+ <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#2c4b73" stroke-opacity=".15"/></pattern>
+</defs>
+<rect width="1600" height="960" rx="30" fill="url(#bg)"/><rect width="1600" height="960" rx="30" fill="url(#grid)"/>
+<text x="90" y="105" fill="#f4f8ff" font-family="Inter,Arial,sans-serif" font-size="43" font-weight="750">PARFUMI · DATABASE MODEL</text>
+<text x="92" y="148" fill="#9eb4d3" font-family="Inter,Arial,sans-serif" font-size="22">Conceptual MongoDB collections shared by the web and mobile applications</text>
+<!-- Relationship lines behind collections -->
+<path d="M520 410 H650 V600 H710" fill="none" stroke="#42b8ff" stroke-width="5" stroke-linecap="round"/>
+<path d="M1080 410 H950 V600 H890" fill="none" stroke="#55e0d0" stroke-width="5" stroke-linecap="round"/>
+<circle cx="520" cy="410" r="7" fill="#42b8ff"/><circle cx="710" cy="600" r="7" fill="#42b8ff"/>
+<circle cx="1080" cy="410" r="7" fill="#55e0d0"/><circle cx="890" cy="600" r="7" fill="#55e0d0"/>
+<!-- Users -->
+<rect x="100" y="220" width="420" height="380" rx="22" fill="url(#u)" stroke="#42b8ff" stroke-width="2.5"/>
+<path d="M100 242 Q100 220 122 220 H498 Q520 220 520 242 V292 H100Z" fill="#173b64"/>
+<text x="140" y="268" fill="#f4f8ff" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="700">users</text>
+<text x="140" y="338" fill="#42b8ff" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">DOCUMENT FIELDS</text>
+<g fill="#dce9fb" font-family="ui-monospace,Consolas,monospace" font-size="22">
+ <text x="145" y="390">_id</text><text x="145" y="438">name</text><text x="145" y="486">email · unique</text><text x="145" y="534">passwordHash</text><text x="145" y="582">role · customer / admin</text>
+</g>
+<!-- Products -->
+<rect x="1080" y="220" width="420" height="380" rx="22" fill="url(#p)" stroke="#55e0d0" stroke-width="2.5"/>
+<path d="M1080 242 Q1080 220 1102 220 H1478 Q1500 220 1500 242 V292 H1080Z" fill="#16444f"/>
+<text x="1120" y="268" fill="#f4f8ff" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="700">products</text>
+<text x="1120" y="338" fill="#55e0d0" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">DOCUMENT FIELDS</text>
+<g fill="#dce9fb" font-family="ui-monospace,Consolas,monospace" font-size="22">
+ <text x="1125" y="390">_id</text><text x="1125" y="438">name</text><text x="1125" y="486">price</text><text x="1125" y="534">category · imageUrl</text><text x="1125" y="582">stock</text>
+</g>
+<!-- Orders -->
+<rect x="590" y="600" width="420" height="300" rx="22" fill="url(#o)" stroke="#9b8cff" stroke-width="2.5"/>
+<path d="M590 622 Q590 600 612 600 H988 Q1010 600 1010 622 V672 H590Z" fill="#38346f"/>
+<text x="630" y="648" fill="#f4f8ff" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="700">orders</text>
+<text x="630" y="713" fill="#b9adff" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">DOCUMENT FIELDS</text>
+<g fill="#dce9fb" font-family="ui-monospace,Consolas,monospace" font-size="21">
+ <text x="635" y="757">_id · userRef: users</text><text x="635" y="798">items[] · product references</text><text x="635" y="839">total · status</text><text x="635" y="880">address · phone</text>
+</g>
+<rect x="90" y="690" width="400" height="146" rx="18" fill="#0c1a31" stroke="#24466e"/>
+<text x="120" y="733" fill="#f4f8ff" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700">RELATIONSHIPS</text>
+<text x="120" y="773" fill="#9eb4d3" font-family="Inter,Arial,sans-serif" font-size="18">One user can place many orders.</text>
+<text x="120" y="806" fill="#9eb4d3" font-family="Inter,Arial,sans-serif" font-size="18">Order items keep product snapshots.</text>
+<rect x="1120" y="690" width="390" height="146" rx="18" fill="#0c1a31" stroke="#24466e"/>
+<text x="1150" y="733" fill="#f4f8ff" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700">ORDER STATUS</text>
+<text x="1150" y="773" fill="#9eb4d3" font-family="Inter,Arial,sans-serif" font-size="18">ordered → confirmed / shipping</text>
+<text x="1150" y="806" fill="#9eb4d3" font-family="Inter,Arial,sans-serif" font-size="18">Admin action updates the status.</text>
+</svg>

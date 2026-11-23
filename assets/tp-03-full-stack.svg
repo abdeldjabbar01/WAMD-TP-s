@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="460" viewBox="0 0 1280 460" role="img" aria-label="Full-Stack Store banner">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071225"/><stop offset=".6" stop-color="#0b1c37"/><stop offset="1" stop-color="#111b42"/></linearGradient>
+        <radialGradient id="glow"><stop stop-color="#55e0d0" stop-opacity=".26"/><stop offset="1" stop-color="#55e0d0" stop-opacity="0"/></radialGradient>
+        <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#2c4b73" stroke-opacity=".18" stroke-width="1"/></pattern>
+      </defs>
+      <rect width="1280" height="460" rx="26" fill="url(#bg)"/>
+      <rect width="1280" height="460" rx="26" fill="url(#grid)"/>
+      <ellipse cx="1000" cy="220" rx="360" ry="270" fill="url(#glow)"/>
+      <path d="M0 390 C220 330 350 475 580 405 S980 360 1280 410" fill="none" stroke="#55e0d0" stroke-opacity=".16" stroke-width="2"/>
+      <rect x="72" y="70" width="88" height="34" rx="17" fill="#55e0d0" fill-opacity=".16" stroke="#55e0d0" stroke-opacity=".65"/>
+      <text x="116" y="93" fill="#55e0d0" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle">TP 03</text>
+      <text x="72" y="178" fill="#f4f8ff" font-family="Inter,Arial,sans-serif" font-size="50" font-weight="750">Full-Stack Store</text>
+      <text x="74" y="222" fill="#9eb4d3" font-family="Inter,Arial,sans-serif" font-size="22">A connected web app powered by an API and database.</text>
+      <rect x="74" y="270" width="70" height="5" rx="2.5" fill="#55e0d0"/>
+      <circle cx="1200" cy="58" r="4" fill="#55e0d0" opacity=".8"/><circle cx="1170" cy="84" r="2.5" fill="#55e0d0" opacity=".7"/>
+      
+          <rect x="790" y="100" width="390" height="267" rx="22" fill="#10284a" stroke="#55e0d0" stroke-width="2"/>
+          <rect x="824" y="138" width="125" height="70" rx="12" fill="#183e69" stroke="#55e0d0"/>
+          <rect x="1020" y="138" width="125" height="70" rx="12" fill="#183e69" stroke="#55e0d0"/>
+          <rect x="922" y="263" width="160" height="68" rx="12" fill="#183e69" stroke="#9b8cff"/>
+          <path d="M949 173 H1020 M1082 208 V238 H1002 V263 M886 208 V238 H1002" fill="none" stroke="#7196c3" stroke-width="4"/>
+          <circle cx="844" cy="159" r="5" fill="#55e0d0"/><circle cx="1040" cy="159" r="5" fill="#55e0d0"/>
+          <path d="M852 180 h70 M1048 180 h70 M949 291 h105" stroke="#7397c2" stroke-width="6" stroke-linecap="round"/>
+        
+    </svg>
