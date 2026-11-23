@@ -1,59 +1,86 @@
-# Parfumi Store
+<div align="center">
+  <img src="assets/banner.svg" alt="Parfumi Mobile App banner" width="100%" />
+  <h1>TP 04 — Parfumi Mobile App</h1>
+  <p>A mobile shopping application built with React Native and Expo.</p>
+</div>
 
-A React Native / Expo fragrance storefront with customer and administrator experiences.
+---
 
-## What changed
+## Overview
 
-- Minimal black-and-white visual system with a restrained blue accent and native system typography.
-- Compact top bar with the `P` mark, global fragrance search, and a role-aware menu.
-- Animated-feeling, icon-led bottom tab navigation with customer and administrator destinations.
-- Customer catalogue redesigned as one fragrance per row, with image on the left and details/actions on the right.
-- Customer cart, placed-order history, and shipped-order tracking.
-- Customer account profile with email, account ID, role, and order count.
-- Admin catalogue management, order fulfilment, customer directory, and account.
-- Added order persistence and protected admin endpoints for order fulfilment and customer listing.
+This TP brings the Parfumi shopping experience to mobile devices.
+The application is built with React Native and Expo.
+It communicates with the Express and MongoDB backend introduced in TP 03.
+The mobile project includes customer and admin experiences.
 
-## Run the mobile app
+## Main Topics
 
-```bash
-cd mobile
-npm install
-npx expo start
+### Mobile interface
+Screens designed for mobile navigation and touch interaction.
+
+### Customer experience
+A customer-facing flow for discovering products and interacting with the store.
+
+### Admin experience
+Administrative screens for the store operations included in the project.
+
+### Backend connection
+Communication with the shared backend API from TP 03.
+
+### Shared data
+The web and mobile clients work with the same store data managed by the backend.
+
+## Technologies
+
+React Native is used to build the mobile interface.
+Expo provides the React Native development platform.
+The app connects to the Express and MongoDB backend from TP 03.
+
+## Project Structure
+
+The section below describes the documentation and presentation files for this TP.
+
+```text
+TD-TP-4/
+├── backend/          # Server, database models, routes, and API configuration
+├── mobile/           # React Native mobile application
+├── assets/           # Banner and architecture diagrams
+├── screenshots/      # Interface screenshots
+├── package.json      # Project dependencies and scripts
+├── start.js          # Application startup script
+└── README.md         # Project documentation
 ```
 
-Set `EXPO_PUBLIC_API_URL` in `mobile/.env` if the API is not reachable at the automatically detected development host, for example:
+The application source files remain in the project folders already provided by the repository.
 
-```env
-EXPO_PUBLIC_API_URL=http://YOUR_COMPUTER_LAN_IP:5000/api
-```
+## Assets
 
-## Run the backend
+The `assets` folder contains the visual banner for this TP.
 
-```bash
-cd backend
-npm install
-cp .env.example .env
-```
+### Mobile Architecture
 
-Fill in `MONGO_URI` and `JWT_SECRET` in `backend/.env`, then run:
+<p align="center"><img src="assets/mobile-architecture.svg" alt="Mobile application architecture" width="100%" /></p>
 
-```bash
-npm start
-```
+The diagram shows the mobile app communicating with the shared backend API and database.
 
-The backend must be reachable from the device/emulator. Configure `CORS_ORIGIN` for any web client origins you use.
+### Database Schema
 
-## Order workflow
+<p align="center"><img src="assets/database-schema.svg" alt="Parfumi database schema" width="100%" /></p>
 
-- Customer checkout creates a persisted order with status `placed`.
-- The customer's **Ordered** tab lists placed orders.
-- An administrator marks an order as shipped from **Orders**.
-- The order then appears in the customer's **Confirmed · shipping** tab.
+The mobile app uses the same store data model as the web application.
 
-## Admin access
+### Order Flow
 
-Administrator access is controlled by the backend `role` field. Do not grant admin privileges from the mobile client. Promote an account in the database or use your trusted server-side admin provisioning process.
+<p align="center"><img src="assets/order-flow.svg" alt="Order flow diagram" width="100%" /></p>
 
-## Security note
+## Screenshots
 
-Secrets are intentionally not included in this archive. Create `backend/.env` from `.env.example` and supply your own credentials. Dependency folders are excluded; install packages with `npm install` in each app folder.
+Add real screenshots of the finished project to the `screenshots` folder.
+
+Suggested screenshot names and contents:
+
+- `home.png` — The main mobile screen.
+- `products.png` — The mobile product browsing screen.
+- `product-details.png` — The mobile product details screen.
+- `admin.png` — An admin screen, if included in the mobile app.
+

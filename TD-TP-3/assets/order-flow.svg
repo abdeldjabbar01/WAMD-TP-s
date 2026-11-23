@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="520" viewBox="0 0 1500 520" role="img" aria-label="Parfumi order lifecycle">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071225"/><stop offset="1" stop-color="#101d3a"/></linearGradient></defs>
+<rect width="1500" height="520" rx="30" fill="url(#bg)"/>
+<text x="85" y="95" fill="#f4f8ff" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="750">ORDER LIFECYCLE</text>
+<text x="87" y="137" fill="#9eb4d3" font-family="Inter,Arial,sans-serif" font-size="21">A simple customer-to-admin order flow</text>
+<g stroke="#6d8cb6" stroke-width="5" fill="none" stroke-linecap="round"><path d="M470 300 H585 M915 300 H1030"/><path d="M565 285 L585 300 L565 315 M1010 285 L1030 300 L1010 315"/></g>
+<rect x="95" y="210" width="375" height="180" rx="22" fill="#10284a" stroke="#42b8ff" stroke-width="2.5"/>
+<text x="132" y="260" fill="#42b8ff" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">01 · CUSTOMER</text>
+<text x="132" y="310" fill="#f4f8ff" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="700">On cart</text>
+<text x="132" y="350" fill="#9eb4d3" font-family="Inter,Arial,sans-serif" font-size="19">Review items and quantities</text>
+<rect x="585" y="210" width="330" height="180" rx="22" fill="#17384a" stroke="#55e0d0" stroke-width="2.5"/>
+<text x="622" y="260" fill="#55e0d0" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">02 · CHECKOUT</text>
+<text x="622" y="310" fill="#f4f8ff" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="700">Ordered</text>
+<text x="622" y="350" fill="#9eb4d3" font-family="Inter,Arial,sans-serif" font-size="19">Order is sent to the store</text>
+<rect x="1030" y="210" width="375" height="180" rx="22" fill="#24264c" stroke="#9b8cff" stroke-width="2.5"/>
+<text x="1067" y="260" fill="#b9adff" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">03 · ADMIN</text>
+<text x="1067" y="310" fill="#f4f8ff" font-family="Inter,Arial,sans-serif" font-size="30" font-weight="700">Confirmed</text>
+<text x="1067" y="350" fill="#9eb4d3" font-family="Inter,Arial,sans-serif" font-size="19">Admin marks the order shipped</text>
+<text x="750" y="455" fill="#7397c2" font-family="Inter,Arial,sans-serif" font-size="17" text-anchor="middle">The mobile app reflects the current order status and progress.</text>
+</svg>
