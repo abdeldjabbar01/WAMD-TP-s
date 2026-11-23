@@ -14,7 +14,7 @@
 
 A personal portfolio website that presents an individual profile and showcases projects and skills.  
 This assignment focuses on structuring a personal web presence through a clear interface.  
-[Open TP 01](./TD-TP-1/)
+[Open TP 01](.TD-TP-1_protfolio)
 
 ## TP 02 — Parfumi Store Interface
 
@@ -22,7 +22,7 @@ This assignment focuses on structuring a personal web presence through a clear i
 
 A front-end interface for an online perfume store named Parfumi.  
 It introduces a product catalogue, product browsing, search, and a shopping cart experience.  
-[Open TP 02](./TD-TP-2/)
+[Open TP 02](.TD-TP-2_Frontend_web)
 
 ## TP 03-04 — Backend-Full-Stack Parfumi Store
 
@@ -30,7 +30,7 @@ It introduces a product catalogue, product browsing, search, and a shopping cart
 
 The Parfumi storefront extended with a backend, database, and authentication.  
 The application uses Express, MongoDB, and JWT to support user access, product management, and order handling.  
-[Open TP 03](./TD-TP-3/)
+[Open TP 03](.TD-TP-3-4_Backend+Fullstck_web)
 
 ## TP 05 — Parfumi Mobile App
 
@@ -38,7 +38,7 @@ The application uses Express, MongoDB, and JWT to support user access, product m
 
 A mobile version of the Parfumi store built with React Native and Expo.  
 It provides customer and admin experiences while reusing the Express and MongoDB backend introduced in TP 03.  
-[Open TP 04](./TD-TP-4/)
+[Open TP 04](.TD-TP-5_Mobile_app)
 
 ---
 
