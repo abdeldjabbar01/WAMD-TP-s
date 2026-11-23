@@ -24,7 +24,7 @@ A front-end interface for an online perfume store named Parfumi.
 It introduces a product catalogue, product browsing, search, and a shopping cart experience.  
 [Open TP 02](./TD-TP-2/)
 
-## TP 03 — Full-Stack Parfumi Store
+## TP 03-04 — Backend-Full-Stack Parfumi Store
 
 <p align="center"><img src="assets/tp-03-full-stack.svg" alt="Full-stack store banner" width="100%" /></p>
 
@@ -32,7 +32,7 @@ The Parfumi storefront extended with a backend, database, and authentication.
 The application uses Express, MongoDB, and JWT to support user access, product management, and order handling.  
 [Open TP 03](./TD-TP-3/)
 
-## TP 04 — Parfumi Mobile App
+## TP 05 — Parfumi Mobile App
 
 <p align="center"><img src="assets/tp-04-mobile-app.svg" alt="Parfumi mobile app banner" width="100%" /></p>
 
